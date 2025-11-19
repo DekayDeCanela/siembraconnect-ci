@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'mvn clean package'
+                bat 'mvnw.cmd clean package'
             }
         }
         stage('Test') {
             steps {
-                bat 'mvn test'
+                bat 'mvnw.cmd test'
             }
         }
         stage('Run') {
