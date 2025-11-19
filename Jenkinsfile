@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                bat 'java -jar target\\api-0.0.1-SNAPSHOT.jar --server.port=8081'
+                bat 'start /B java -jar target\\api-0.0.1-SNAPSHOT.jar --server.port=8081'
             }
         }
     }
