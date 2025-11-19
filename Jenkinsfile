@@ -2,11 +2,6 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/DekayDeCanela/siembraconnect-ci.git'
-            }
-        }
         stage('Build') {
             steps {
                 bat 'mvn clean package'
