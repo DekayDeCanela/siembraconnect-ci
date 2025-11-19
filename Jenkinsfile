@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                bat 'java -jar target\\*.jar'
+                bat 'java -jar target\\api-0.0.1-SNAPSHOT.jar'
             }
         }
     }
